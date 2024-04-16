@@ -8,7 +8,7 @@ const closeBtn = document.getElementById("closeBtn");
 const submitModal = document.getElementById("submitModal");
 const submitClose = document.getElementById("closeSub");
 
-console.log("working")
+console.log("test")
 
 startBtn.addEventListener("click", () => {
     modal.showModal();
