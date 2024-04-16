@@ -1,0 +1,52 @@
+﻿:root {
+    --Primary60: #202027;
+    --Secondary30: #ffffff;
+    --Accent10: linear-gradient(80deg, #1055ce, #0facc4);
+    --RadialAccent: radial-gradient(80deg, #1055ce, #0facc4);
+}
+
+nav{
+    background-color: var(--Primary60);
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-inline: 15px;
+}
+
+#el1{
+    margin-right: auto;
+    position: absolute;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#el2{
+    margin-left: auto;
+    display: inline-flex;
+    color: var(--Secondary30);
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#el2 li{
+    margin-inline: 10px;
+    font-size: 1.2em;
+}
+
+    #el2 li a {
+        color: var(--Secondary30);
+        text-decoration: none;
+        transition: .3s;
+    }
+    #el2 li a:hover {
+        color: var(--Secondary30);
+        text-decoration: none;
+        font-size: 1.3em;
+        transition: .3s;
+    }
