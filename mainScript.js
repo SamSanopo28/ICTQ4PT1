@@ -8,6 +8,8 @@ const closeBtn = document.getElementById("closeBtn");
 const submitModal = document.getElementById("submitModal");
 const submitClose = document.getElementById("closeSub");
 
+console.log("working")
+
 startBtn.addEventListener("click", () => {
     modal.showModal();
 });
@@ -31,7 +33,10 @@ function sub() {
     if (q1 === "") {
         q1 = "None";
     }
-
+     else {
+     q4 = q4.substring(2, q4.length)
+     }
+    
     q1 = q1.substring(2, q1.length);
 
     let q2 = document.querySelector("input[name='chc0']:checked");
