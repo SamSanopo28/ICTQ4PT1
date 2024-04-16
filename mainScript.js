@@ -5,11 +5,19 @@ const error = document.getElementById("errorModal");
 const closeErrBtn = document.getElementById("closeError");
 const errorMsg = document.getElementById("errorMessage");
 const closeBtn = document.getElementById("closeBtn");
+const submitModal = document.getElementById("submitModal");
+const submitClose = document.getElementById("closeSub");
+
 startBtn.addEventListener("click", () => {
     modal.showModal();
 });
 
 closeBtn.addEventListener("click", close);
+
+submitClose.addEventListener("click", () => {
+    submitModal.close();
+});
+
 function close() {
     modal.close();
 }
@@ -121,6 +129,10 @@ function sub() {
         );
 
         localStorage.setItem("Satisfaction of user", q10.value);
+
+        setTimeout(() => {
+            submitModal.showModal();
+        }, 20);
     } else {
         let unansweredQsAsString = unansweredQs.join(", ");
         console.log(unansweredQs);
